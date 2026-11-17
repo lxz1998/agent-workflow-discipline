@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2026-W47c
+
+- `script-guardrails` 增加 `scripts/template.py`：可直接复制的脚本骨架（自带 dry-run / 跳过上限 /
+  Decimal / `[done]` 回执 / 统一重试 / `--self-test`）
+- 修一处**自家文档的坑**：模板里的金额校验示例原写 `assert`——而 `python -O` 会剥掉 assert，
+  与同一份文档「不要用 assert」的规矩冲突。已改为 `if ... return 2`。
+
 ## v2026-W47b（第二批）
 
 - 新增 `script-guardrails`：四条铁律（失败要可见 / 事务必做 / 金额用 Decimal / 跳过设上限）+
