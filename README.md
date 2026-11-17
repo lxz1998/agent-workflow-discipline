@@ -9,8 +9,10 @@
 | [`pre-action-gate`](skills/pre-action-gate/SKILL.md) | **动手之前该问什么** | 每次要改数据、要对外交付、要新建东西 |
 | [`second-opinion`](skills/second-opinion/SKILL.md) | **结论要不要找人复核、怎么问、怎么判** | 数字会被人拿去决策时 |
 | [`context-handoff`](skills/context-handoff/SKILL.md) | **上下文要丢了，怎么把状态交出去** | 阶段结束、换会话、交接 |
+| [`script-guardrails`](skills/script-guardrails/SKILL.md) | **数据脚本怎么写才不静默出错** | 写/改读 Excel、入库、批量脚本 |
 
-三个是一套：**动手前拦住错前提 → 结论前拦住错自信 → 结束时拦住状态丢失。**
+前三个是一套：**动手前拦住错前提 → 结论前拦住错自信 → 结束时拦住状态丢失。**
+第四个是另一条线：**脚本层面拦住"失败了但没人知道"**（附可跑的 `py_check.py`）。
 
 ---
 
